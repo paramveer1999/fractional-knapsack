@@ -7,7 +7,7 @@ t=*x;
 *x=*y;
 *y=t;
 }
-void main()
+int main()
 {
 float weight[10],value[10];
 int i,j,n,a[10],capacity;
