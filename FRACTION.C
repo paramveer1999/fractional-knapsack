@@ -7,13 +7,6 @@ t=*x;
 *x=*y;
 *y=t;
 }
-void swap1(int *x,int *y)
-{
-int t;
-t=*x;
-*x=*y;
-*y=t;
-}
 void main()
 {
 float weight[10],value[10];
@@ -36,6 +29,7 @@ ratio[i]=value[i]/weight[i];
 printf("%f",ratio[i]);
 
 }
+ ## arranging the items in descending order of their ratio
 for(i=0;i<n;i++)
 {
 for(j=0;j<n-i-1;j++)
@@ -49,6 +43,7 @@ swap(&weight[j],&weight[j+1]);
 
 printf("Enter the capacity of knapsack");
 scanf("%d",&capacity);
+ ##adding the items in knapsack
 pt=0;
 for(i=0;i<n;i++)
 {
